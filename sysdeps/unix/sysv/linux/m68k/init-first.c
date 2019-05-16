@@ -29,7 +29,7 @@ _libc_vdso_platform_setup (void)
 {
   void *p;
 
-  PREPARE_VERSION (linux26, "LINUX_2.6", 61765110);
+  PREPARE_VERSION_KNOWN (linux26, LINUX_2_6);
 
   /* It may happen that rtld didn't initialize the vDSO, so fallback
      to the syscall implementations if _dl_vdso_vsym returns NULL.
